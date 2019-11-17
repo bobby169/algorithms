@@ -1,13 +1,26 @@
 {
-  "name": "hello",
-  "version": "0.1.0",
-  "private": true,
+  "name": "javascript-datastructures-algorithms",
+  "version": "0.0.1",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bobby169/algorithms.git"
+  },
+  "keywords": [
+    "Structures",
+    "Algorithm"
+  ],
+  "author": "bobby169",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bobby169/algorithms/issues"
+  },
+  "homepage": "https://github.com/bobby169/algorithms#readme",
   "dependencies": {
     "core-js": "^3.3.2",
     "vue": "^2.6.10"
