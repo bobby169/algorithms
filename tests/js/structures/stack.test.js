@@ -1,5 +1,5 @@
 import Stack from '../../../src/js/structures/stack'
-describe('HelloWorld.vue', () => {
+describe('Stack', () => {
   let stack
   beforeEach(() => {
     stack = new Stack()
