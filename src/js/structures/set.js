@@ -31,6 +31,7 @@ export default class Set {
    * 交集
    * @param otherSet
    * @returns {Set}
+   * es6: new Set([...setA, ...setB])
    */
   union (otherSet) {
     const unionSet = new Set()
@@ -43,6 +44,7 @@ export default class Set {
    * 交集
    * @param otherSet
    * @returns {Set}
+   * es6: new Set([...setA].filter(x => setB.has(x)))
    */
   intersection (otherSet) {
     const intersectionSet = new Set()
@@ -66,6 +68,7 @@ export default class Set {
    * 差集
    * @param otherSet
    * @returns {Set}
+   * es6: new Set([...setA].filter(x => !setB.has(x)))
    */
   difference (otherSet) {
     const differenceSet = new Set()
