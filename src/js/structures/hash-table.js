@@ -1,6 +1,9 @@
 import { defaultToString } from '../util'
 import { ValuePair } from './models/value-pair'
 
+/**
+ * 也叫 HashMap 类，它是 Dictionary 类的一种散列表实现方式
+ */
 export default class HashTable {
   constructor (toStrFn = defaultToString) {
     this.toStrFn = toStrFn
