@@ -1,5 +1,6 @@
 
 // ES6 提供了新的数据结构 Set。它类似于数组，但是成员的值都是唯一的，没有重复的值。
+// Set没有get()方法获取元素。且无法像数组用下标方式，（可以用[...new Set(array)]转化为array），但可以用Iterator遍历器接口获取元素
 // Set 内置Iterator遍历器接口（同Array一样），有keys()、values()、entries()、forEach()方法
 
 describe('es6 Set', () => {
