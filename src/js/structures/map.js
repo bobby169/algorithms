@@ -1,7 +1,7 @@
 import { defaultToString } from '../util'
 import { ValuePair } from './models/value-pair'
 
-export default class Set {
+export default class Map {
   constructor (toStrFn = defaultToString) {
     this.toStrFn = toStrFn
     this.table = {}
