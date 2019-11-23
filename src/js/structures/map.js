@@ -25,7 +25,7 @@ export default class Map {
     return this.table[this.toStrFn(key)] != null
   }
 
-  remove (key) {
+  delete (key) {
     if (this.hasKey(key)) {
       delete this.table[this.toStrFn(key)]
       return true
