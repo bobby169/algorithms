@@ -117,4 +117,16 @@ describe('es6 Map', () => {
     map.set(NaN, 3)
     expect(map.get(NaN)).toBe(3)
   })
+
+  it('set value null', () => {
+    const map = new Map()
+    let key = {}
+    let obj = { foo: 1 }
+
+    map.set(key, obj)
+    expect(map.get(key)).toBe(obj)
+
+    obj = null
+    expect(map.get(key)).toStrictEqual({ foo: 1 })
+  })
 })
