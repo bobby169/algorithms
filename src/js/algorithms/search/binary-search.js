@@ -12,7 +12,7 @@ import { quickSort } from '../sorting/quicksort'
  * @param array
  * @param value
  * @param compareFn
- * @returns {number}
+ * @returns {number} // 相当于Array.prototype.findIndex返回index
  */
 export function binarySearch (array, value, compareFn = defaultCompare) {
   const sortedArray = quickSort(array)
