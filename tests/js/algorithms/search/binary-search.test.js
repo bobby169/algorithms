@@ -38,4 +38,23 @@ describe('Binary Search', () => {
     const array = [{ key: 1 }, { key: 2 }, { key: 3 }]
     expect(binarySearch(array, { key: 2 }, customEquals)).toEqual(1)
   })
+
+  it('vs Array.prototype.findIndex', () => {
+    const arr1 = [2, 7, 8, 5, 4, 1, 9, 10, 3, 6]
+    const arr2 = [...arr1]
+    // const fn1 = jest.fn()
+    const res1 = binarySearch(arr1, 2) // 已把原数组进行了排序，直接更改了原数组
+
+    const fn2 = jest.fn()
+    const res2 = arr2.findIndex((value, index, arr) => {
+      fn2()
+      return value === 5
+    })
+    console.info(res1, 'res1')
+    console.info(res2, 'res2')
+    // expect(fn1).toBeCalledTimes(2)
+    expect(fn2).toBeCalledTimes(4)
+    // expect(res1).toBeLessThan(res2)
+    // expect(res1).toEqual(res2)
+  })
 })
