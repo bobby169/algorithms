@@ -1,6 +1,10 @@
 import { Compare, defaultCompare, defaultEquals } from '../util'
 import LinkedList from './linked-list'
 
+/**
+ * 有序链表是指保持元素有序的链表结构。除了使用排序算法之外，我们还可以将元素插入到
+ 正确的位置来保证链表的有序性。
+ */
 export default class SortedLinkedList extends LinkedList {
   constructor (equalsFn = defaultEquals, compareFn = defaultCompare) {
     super(equalsFn)
