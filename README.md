@@ -1,29 +1,28 @@
-# hello
+> 著名数据专家沃斯曾说：算法+数据结构=程序
 
-## Project setup
-```
-npm install
-```
+## 排序
+### 衡量排序算法好坏的三要素：
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+一、执行效率
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- 最好时间复杂度
+- 最坏时间复杂度
+- 平均时间复杂度
+- 时间复杂度的系数、常数 、低阶（因为排序的数据规模一般不会非常大）
+- 比较、交换的次数
 
-### Run your unit tests
-```
-npm run test:unit
-```
+二、额外内存消耗（内存消耗为O(1)的称为原地排序）
 
-### Lints and fixes files
-```
-npm run lint
-```
+三、稳定性，是否是稳定排序（即如果待排序的序列中存在值相等的元素，经过排序之后，相等元素之间原有的先后顺序不变）
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 按时间复杂度分类：
+    
+- O(n²)： 冒泡排序、插入排序、选择排序
+- O(nlogn)：归并排序、快速排序
+- O(n) ：桶排序、计数排序、基数排序 （条件苛刻，适用于部分场景）
+
+#### 冒泡排序
+
+原理： 从下往上，逐次比较两个相邻的数据，如果下面的数据比上面的数据大，则把这两个数据的位置互换。
+
+
